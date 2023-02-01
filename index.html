@@ -1,0 +1,47 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cryptocurrency Price Checker</title>
+  <style>
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 55px;
+    }
+
+    input[type="text"] {
+      height: 24px;
+      width: 100px;
+  
+      font-size: 16px;
+      margin-right: 10px;
+    }
+
+    button[type="submit"] {
+      height: 24px;
+      width: 50px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      border:  solid 1px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    #crypto-price {
+      margin-top: 5px;
+      text-align: center;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <form id="crypto-form">
+    <input type="text" name="cryptoCode" placeholder="Enter crypto name" autocomplete="off">
+    <button type="submit">Price</button>
+  </form>
+  <div id="crypto-price"></div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Cryptocurrency Price Checker",
+  "version": "1.0",
+  "description": "A Chrome extension that checks the price of a cryptocurrency using the Binance API",
+  "content_security_policy": "script-src 'self' 'unsafe-inline' https://api.binance.com; object-src 'self'",
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["https://api.binance.com/*"]
+}
